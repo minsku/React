@@ -1,8 +1,6 @@
 import './App.css';
 import MediaTable from './components/MediaTable';
 
-// add to App.js after imports
-
 const mediaArray = [
   {
     title: 'Title 1',
@@ -33,8 +31,8 @@ const mediaArray = [
   },
 ];
 
-function App() {
+const App = () => {
   return <MediaTable mediaArray={mediaArray} />;
-}
+};
 
 export default App;

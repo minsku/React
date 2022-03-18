@@ -17,4 +17,5 @@ const MediaTable = ({mediaArray}) => {
 MediaTable.propTypes = {
   mediaArray: PropTypes.array.isRequired,
 };
+
 export default MediaTable;
