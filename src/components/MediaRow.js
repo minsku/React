@@ -8,7 +8,7 @@ const MediaRow = ({file}) => {
         <img src={mediaUrl + file.thumbnails.w160} alt={file.title} />
       </td>
       <td>
-        <h4>{file.title}</h4>
+        <h3>{file.title}</h3>
         <p>{file.description}</p>
       </td>
       <td>
@@ -19,7 +19,6 @@ const MediaRow = ({file}) => {
 };
 
 MediaRow.propTypes = {
-  file: PropTypes.object,
+  file: PropTypes.object.isRequired,
 };
-
 export default MediaRow;
