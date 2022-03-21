@@ -3,14 +3,16 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from './views/Home';
 import Profile from './views/Profile';
+import Single from './views/Single';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/single" element={<Single />} />
       </Routes>
     </Router>
   );
