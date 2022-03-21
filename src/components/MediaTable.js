@@ -4,7 +4,6 @@ import MediaRow from './MediaRow';
 
 const MediaTable = () => {
   const {mediaArray} = useMedia();
-
   console.log(mediaArray);
   return (
     <table>
@@ -16,4 +15,7 @@ const MediaTable = () => {
     </table>
   );
 };
+
+MediaTable.propTypes = {};
+
 export default MediaTable;
