@@ -14,7 +14,6 @@ const Nav = () => {
       const userData = await getUser(localStorage.getItem('token'));
       console.log(userData);
       setUser(true);
-      navigate('/home');
     } catch (err) {
       setUser(null);
       navigate('/');
