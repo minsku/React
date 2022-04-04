@@ -52,4 +52,5 @@ const LoginForm = (props) => {
 };
 
 LoginForm.propTypes = {};
+
 export default LoginForm;
