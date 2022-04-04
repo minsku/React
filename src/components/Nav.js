@@ -4,7 +4,6 @@ import {MediaContext} from '../contexts/MediaContext';
 import {useUser} from '../hooks/ApiHooks';
 
 const Nav = () => {
-  // eslint-disable-next-line no-unused-vars
   const [user, setUser] = useContext(MediaContext);
   const {getUser} = useUser();
   const navigate = useNavigate();
@@ -13,7 +12,8 @@ const Nav = () => {
     try {
       const userData = await getUser(localStorage.getItem('token'));
       console.log(userData);
-      setUser(true);
+      setUser(userData);
+      navigate('/home');
     } catch (err) {
       setUser(null);
       navigate('/');

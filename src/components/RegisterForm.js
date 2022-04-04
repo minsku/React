@@ -17,7 +17,7 @@ const RegisterForm = (props) => {
     console.log('doRegister');
     try {
       const checkUser = await getUsername(inputs.username);
-      if (checkUser.available) {
+      if (checkUser) {
         const userData = await postUser(inputs);
         console.log(userData);
       }
